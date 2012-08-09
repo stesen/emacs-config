@@ -1,1 +1,5 @@
 *.elc
+_emacs.d/auto-save-list/*
+_emacs.d/saveplace
+_emacs.d/.session
+_emacs.d/tramp
