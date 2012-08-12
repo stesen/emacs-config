@@ -34,7 +34,7 @@
 		   (other-window 1)
 		   (ecb-set-history-buffer) 
 		   ;-----------------------
-		   (ecb-split-ver 0.2 t)
+		   (ecb-split-ver 0.4 t)
 		   (other-window 1)
 		   (ecb-set-cscope-buffer)
 		   )
