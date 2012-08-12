@@ -182,3 +182,6 @@
 
 (global-unset-key "\C-x\C-c")
 (global-set-key "\C-x\C-c" 'confirm-exit-emacs)
+
+(require 'autopair)
+(autopair-global-mode 1)

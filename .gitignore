@@ -1,5 +1,5 @@
 *.elc
-_emacs.d/auto-save-list/*
-_emacs.d/saveplace
-_emacs.d/.session
-_emacs.d/tramp
+configs/_emacs.d/auto-save-list/*
+configs/_emacs.d/saveplace
+configs/_emacs.d/.session
+configs/_emacs.d/tramp
