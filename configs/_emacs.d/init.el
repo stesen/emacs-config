@@ -23,14 +23,11 @@
 
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
-(load-file "~/.emacs.d/sub-config/config-color.el")
-(load-file "~/.emacs.d/sub-config/config-misc.el")
-(load-file "~/.emacs.d/sub-config/config-c-coding.el")
-(load-file "~/.emacs.d/sub-config/config-complete.el")
-(load-file "~/.emacs.d/sub-config/config-mouse.el")
-(load-file "~/.emacs.d/sub-config/config-lisp.el")
+(load-file "~/.emacs.d/sub-config/config-color.elc")
+(load-file "~/.emacs.d/sub-config/config-misc.elc")
+(load-file "~/.emacs.d/sub-config/config-c-coding.elc")
+(load-file "~/.emacs.d/sub-config/config-complete.elc")
+(load-file "~/.emacs.d/sub-config/config-mouse.elc")
+(load-file "~/.emacs.d/sub-config/config-lisp.elc")
 
-(defun load-ecb-and-cedet-and-xcscope ()
- (interactive)
- (load-file "~/.emacs.d/sub-config/config-ecb-cedet.el"))
-(global-set-key (kbd "<f12>") 'load-ecb-and-cedet-and-xcscope)
+(load-file "~/.emacs.d/sub-config/config-ecb-cedet.elc")

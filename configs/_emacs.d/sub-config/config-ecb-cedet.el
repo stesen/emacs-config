@@ -43,7 +43,8 @@
 (setq ecb-history-make-buckets 'never)
 (setq ecb-layout-name "my-cscope-layout")  
 (global-set-key [f11] 'ecb-toggle-ecb-windows)
-(ecb-activate)
+(setq ecb-primary-secondary-mouse-buttons 'mouse-1--C-mouse-1)
+;(ecb-activate)
 
 ;;;;;;;;;; cscope ;;;;;;;;;;
 (require 'xcscope) ;;加载xcscope
