@@ -1,4 +1,4 @@
-This is ecb.info, produced by makeinfo version 4.8 from ecb.texi.
+This is ecb.info, produced by makeinfo version 4.13 from ecb.texi.
 
 INFO-DIR-SECTION GNU Emacs Lisp
 START-INFO-DIR-ENTRY
@@ -24,7 +24,7 @@ aspects to be a good example and skeleton for complex tools (like a graphical
 debugger) which want to use the layout-engine of ECB do display their own
 information.
 
-*IMPORTANT*: See *Note tree-buffer:: for a full documentation of the library
+*IMPORTANT*: See *note tree-buffer:: for a full documentation of the library
 tree-buffer.el which can be used for programming a new special window as a
 tree!
 
@@ -412,7 +412,7 @@ with name "example-layout1":
      ;; select the edit-window
      (select-window (next-window)))
 
-This all what we need to define the new layout. See *Note Programming a new
+This all what we need to define the new layout. See *note Programming a new
 layout:: for more details of the pure layout-programming task.
 
 11.5.2.8 Activating and deactivating new layouts
@@ -513,7 +513,7 @@ File: ecb.info,  Node: Possible layout-outlines,  Next: The layout-engine API,  
 11.5.3 The wide range of possible layout-outlines
 -------------------------------------------------
 
-In the two previous sections *Note Programming a new layout:: and *Note
+In the two previous sections *note Programming a new layout:: and *note
 Programming special windows:: we have explained in detail how to program new
 layouts and how to program new special windows/buffers and adding them to a
 new layout.
@@ -1004,7 +1004,7 @@ This is the only senseful behavior of `scroll-all-mode' with ECB.
 ......................................
 
 The variable `vc-delete-logbuf-window' must be set to nil during active ECB.
-This can be done with the hooks mentioned in *Note Elisp programming::.
+This can be done with the hooks mentioned in *note Elisp programming::.
 
 12.1.1.13 Package VM (Emacs Mail-Client)
 ........................................
@@ -1046,7 +1046,7 @@ versions >= 2.21.
 If there are conflicts with the Xref-browser then the most recommended way is
 to use one of the window-manager escreen.el or winring.el (and then use
 different escreens or window-configurations for ECB and Xrefactory-browsing -
-*Note Window-managers and ECB::).
+*note Window-managers and ECB::).
 
 12.1.2 What to do for unknown conflicts with other packages
 -----------------------------------------------------------
@@ -1146,17 +1146,17 @@ with ECB?
 
 What should i do, if a have a     Send a problem-report to the ECB-mailing-list
 problem which can not be          with the command `ecb-submit-problem-report'.
-solved even after reading the     See *Note Submitting problem report::.
+solved even after reading the     See *note Submitting problem report::.
 online-help?                      
 
-What should i do, if another      Take a look into *Note Conflicts::. If your
+What should i do, if another      Take a look into *note Conflicts::. If your
 package seems not to work         package is not listed there then submit a
 correct with ECB?                 problem-report.
 
 Can ECB parse and display         Yes, in all version >= 1.94. ECB can now
 source-contents not supported     parse and display all source-contents
 by semantic?                      supported by semantic, imenu or etags - same
-                                  as speedbar. See *Note Non-semantic sources::.
+                                  as speedbar. See *note Non-semantic sources::.
 
 Why are the lines in the ECB-,    Check the variable
 temp- and compilation-buffers     `truncate-partial-width-windows' and set it to
@@ -1191,7 +1191,7 @@ source-files for C++?             which is not mapped to c++-mode in
                                   `auto-mode-alist' and/or your own Emacs-setup
                                   has "destroyed" the correct value of the
                                   hook-variable `c++-mode-hook'.
-                                  See *Note Setting up Emacs::.
+                                  See *note Setting up Emacs::.
 
 Is it possible to make the        You can use the library "desktop.el" which
 history of ECB persistent?        works very well with ECB.  Then all files of
@@ -1219,18 +1219,18 @@ with Gnus within one frame?       not recommended because each of them has it's
 Can i speed up displaying the     Yes, see the option
 contents of big-size              `ecb-cache-directory-contents'. Read the
 directories?                      section
-                                  *Note Large directories::.
+                                  *note Large directories::.
 
-Is it possible to create/use      Yes. *Note Creating a new ECB-layout:: and
-other layouts than the            *Note The layout-engine:: are the relevant
+Is it possible to create/use      Yes. *note Creating a new ECB-layout:: and
+other layouts than the            *note The layout-engine:: are the relevant
 built-in ones?                    sections. The former one describes how to
                                   create interactively new layouts where the
                                   latter one is for Elisp-programmers.
 
-Can i use speedbar as             Yes, see *Note Integrating speedbar::.
+Can i use speedbar as             Yes, see *note Integrating speedbar::.
 directory-browser within ECB?     
 
-Can i exclude subdirectories      Yes, see *Note Grepping directories::.
+Can i exclude subdirectories      Yes, see *note Grepping directories::.
 from the recursive grep in the    
 directories buffer?               
 
@@ -1239,18 +1239,18 @@ contaminating each directory      directory.
 with a file `semantic-cache'?     
 
 Why ECB displays large            This comes from semantic;
-portions of current               see *Note Setting up Emacs::.
+portions of current               see *note Setting up Emacs::.
 source-file with dark             
 background?                       
 
 Why ECB underlines some parts     This comes from semantic;
-of current source-file?           see *Note Setting up Emacs::.
+of current source-file?           see *note Setting up Emacs::.
 
-Can i add my own commands to      Yes, see *Note Using the mouse::.
+Can i add my own commands to      Yes, see *note Using the mouse::.
 the popup-menus of                
 tree-buffers?                     
 
-Can ECB display the               Yes, see *Note Common use-cases::.
+Can ECB display the               Yes, see *note Common use-cases::.
 compile-window "on demand"?       
 
 Which buffers are treated as      See the docstring of the function
@@ -1277,21 +1277,21 @@ hiding/showing from the           supported by hideshow or you have to add an
 methods-buffer does not work?     entry to `hs-special-modes-alist'
                                   (*note Hide-show::).
 
-Can i maximize one of the         Yes, see *Note Maximizing the ECB windows::.
+Can i maximize one of the         Yes, see *note Maximizing the ECB windows::.
 ECB-windows for better            
 overlook?                         
 
-Can i hide the ECB-windows for    Yes, see *Note Hiding the ECB windows::.
+Can i hide the ECB-windows for    Yes, see *note Hiding the ECB windows::.
 getting more editing-space?       
 
-Can i define the actions ECB      Yes, see *Note Visiting tags::.
+Can i define the actions ECB      Yes, see *note Visiting tags::.
 performs after visiting a tag?    
 
-Buffers are not displayed         See *Note Problems with the compile window::.
+Buffers are not displayed         See *note Problems with the compile window::.
 correctly in the                  
 compile-window?                   
 
-Can ECB work together with        Yes, see *Note Window-managers and ECB::.
+Can ECB work together with        Yes, see *note Window-managers and ECB::.
 window-managers like              
 escreen.el?                       
 
@@ -1307,12 +1307,12 @@ do?                               Windows does not support image-display so ECB
                                   `ecb-tree-buffer-style'.
 
 Do `special-display-function'     Yes, see
-et. al. work with ECB.            *Note Using special-display with ECB::.
+et. al. work with ECB.            *note Using special-display with ECB::.
 
-Can i activate the popup-menu     Yes, see *Note Using popup-menus::.
+Can i activate the popup-menu     Yes, see *note Using popup-menus::.
 of a tree-buffer from keyboard?   
 
-Can i display the popup-menu      Yes, see *Note Using popup-menus::.
+Can i display the popup-menu      Yes, see *note Using popup-menus::.
 of a tree-buffer with tmm?        
 
 Does ECB disable all advices      "Nes"(2), see remarks in the documentation of
@@ -1324,25 +1324,25 @@ state of ECB between              `ecb-split-edit-window-after-start'.
 deactivation and next             
 activation?                       
 
-Can i change the behavior how     Yes, see *Note The other window::.
+Can i change the behavior how     Yes, see *note The other window::.
 ECB chooses another window for    
 selecting it or scrolling it.     
 
 Can i increase the allowed        Yes, see the docstring of the option
 depth of nested submenus.         `ecb-directories-menu-user-extension'.
 
-Can i apply some filters to       Yes, see *Note Filtering the tree-buffers::
+Can i apply some filters to       Yes, see *note Filtering the tree-buffers::
 the Tree-buffers.                 
 
 With XEmacs i get sometimes an    Disable the func-menu support in your
-error "Wrong number of            XEmacs-setup. See *Note Conflicts::.
+error "Wrong number of            XEmacs-setup. See *note Conflicts::.
 arguments: widen (1)". What       
 can i do?                         
 
-Can i use desktop.el in           Yes, see *Note Conflicts::.
+Can i use desktop.el in           Yes, see *note Conflicts::.
 combination with ECB?             
 
-Opening directories takes a       Read *Note Large directories::.
+Opening directories takes a       Read *note Large directories::.
 long time - what can i do?        
 
 ECB seems to be blocked           ECB performs some stealthy tasks when idle -
@@ -1374,23 +1374,23 @@ ECB ignores the remote-paths i    Maybe you have to check the option
 have added to                     `ecb-ping-options'. Ensure that this option
 `ecb-source-path'.                contains a value suitable for your
                                   ping-program (see `ecb-ping-program').
-                                  See also *Note Remote directories::.
+                                  See also *note Remote directories::.
 
 ECB seems to be blocked a long    Maybe you use cygwin-XEmacs. Then either the
 time.                             empty-dir-check (see option
                                   `ecb-prescan-directories-for-emptyness') or
                                   the VC-support (see `ecb-vc-enable-support')
                                   can block ECB.
-                                  For the latter one see *Note Known
+                                  For the latter one see *note Known
                                   VC-problems::.
 
 ECB seems to be blocked during    Maybe the root repository for the current
 the VC-state update in the        directory is a remote-repository. This can
 tree-windows.                     result in a long lasting check-time per file.
-                                  See also *Note Version-control support:: for
+                                  See also *note Version-control support:: for
                                   hints what you can do.
 
-I have encountered some           See also *Note Version-control support:: for
+I have encountered some           See also *note Version-control support:: for
 problems with the display of      hints what you can do.
 the VC-state in the               
 tree-buffers.                     
@@ -1400,7 +1400,7 @@ version control seems to be       now also a accurate recompute-state function.
 not accurate. What is the         This is by offering `ecb-vc-recompute-state'
 reason and what can i do?         as an alias to the function
                                   `vc-recompute-state' as state-check function
-                                  for this option. See also *Note
+                                  for this option. See also *note
                                   Version-control support::
 
 With Emacs 23 ECB shows a odd     Check the values of the options
@@ -1448,7 +1448,7 @@ doesn't jump to the definition    the needs of your project (ie. mainly setting
 of this parent-type.              up all so semantic can find files in your
                                   directory-structure) then ECB will find the
                                   parent-definition and also jump to it. See
-                                  *Note ECB Methods-window:: and the subsection
+                                  *note ECB Methods-window:: and the subsection
                                   "Jumping to the definition of external tags"
                                   and see the option
                                   `ecb-find-external-tag-functions'.
@@ -1607,8 +1607,8 @@ This index contains all customizable options of ECB.
 * basic-buffer-sync-hook:                ecb-tree-buffer.           (line  43)
 * before-activate-hook:                  ecb-general.               (line  66)
 * before-deactivate-hook:                ecb-general.               (line  77)
-* bucket-node-display <1>:               ecb-general.               (line  83)
-* bucket-node-display:                   ecb-tree-buffer.           (line  67)
+* bucket-node-display <1>:               ecb-tree-buffer.           (line  67)
+* bucket-node-display:                   ecb-general.               (line  83)
 * cache-directory-contents:              ecb-directories.           (line  64)
 * cache-directory-contents-not:          ecb-directories.           (line 118)
 * change-layout-preserves-compwin-state: ecb-compilation.           (line 155)
@@ -1688,7 +1688,7 @@ This index contains all customizable options of ECB.
 * layout-window-sizes:                   ecb-layout.                (line 188)
 * major-modes-show-or-hide:              ecb-general.               (line 207)
 * maximize-ecb-window-after-selection:   ecb-layout.                (line 209)
-* maximize-next-after-maximized-select:  ecb-layout.                (line 257)
+* maximize-next-after-maximized-select:  ecb-layout.                (line 217)
 * method-face:                           ecb-face-options.          (line  63)
 * method-non-semantic-face:              ecb-face-options.          (line  71)
 * methods-buffer-after-create-hook:      ecb-methods.               (line 240)

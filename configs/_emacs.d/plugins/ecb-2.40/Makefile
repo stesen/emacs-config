@@ -48,7 +48,7 @@ EMACS=emacs
 # cedet >= 1.0 (contains a.o. semantic >= 2.0, eieio >= 0.18 and speedbar
 # >= 0.15). Set here the full path to the cedet-installation directory.
 
-CEDET=/home/stesen/.emacs.d/plugins/cedet-1.1
+CEDET=~/.emacs.d/plugins/cedet-1.1
 
 # You can set here more load-paths to arbitrary packages if you want. But
 # this is really not necessary!
@@ -100,7 +100,7 @@ PS2PDF=/C/home/bin/ps2pdf
 
 # Set here the path of the info subdirectory of your (X)Emacs installation
 # which contains the dir file.
-EMACSINFOPATH=/C/Programme/emacs-22.3/info
+EMACSINFOPATH=/home/stesen/usr/share/emacs-24.1/info
 
 # If you want to install the info-format of the online-help in the
 # Top-directory of the info-directory of (X)Emacs (see above EMACSINFOPATH)

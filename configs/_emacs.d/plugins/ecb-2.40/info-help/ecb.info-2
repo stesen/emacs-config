@@ -1,4 +1,4 @@
-This is ecb.info, produced by makeinfo version 4.8 from ecb.texi.
+This is ecb.info, produced by makeinfo version 4.13 from ecb.texi.
 
 INFO-DIR-SECTION GNU Emacs Lisp
 START-INFO-DIR-ENTRY
@@ -2626,7 +2626,7 @@ This group contains all faces used in ECB:
 
 
 Just call `customize-face <face-name>' to customize these faces for your
-personal taste. Or customize the related option in the group *Note
+personal taste. Or customize the related option in the group *note
 ecb-face-options::.
 
 
@@ -3143,11 +3143,11 @@ File: ecb.info,  Node: Submitting problem report,  Next: Upgrading,  Prev: Custo
 
 If you run into problems with ECB you should first take a look into
 
-   - *Note FAQ:: or
+   - *note FAQ:: or
 
-   - *Note Conflicts and bugs:: or
+   - *note Conflicts and bugs:: or
 
-   - *Note Common use-cases:: or
+   - *note Common use-cases:: or
 
    - the appropriate section of this online-manual.
 
@@ -3155,7 +3155,7 @@ If your problem(s) still remain you can/should send a problem report to the
 ECB mailing list <ecb-list@lists.sourceforge.net>. ECB offers you a command
 which does all necessary for you to send a problem report. Just call
 `ecb-submit-problem-report'! Please read the documentation of this command,
-see *Note Interactive ECB commands::.
+see *note Interactive ECB commands::.
 
 *IMPORTANT*: Cause of extra appearance of SPAM in the mailing-lists,
 SourceForge has changed its policy: Now it is only possible to post to the
@@ -3241,7 +3241,7 @@ SINCE VERSION 2.33! Please got to the website of ECB and download and install
 
   3. Install and setup ECB
 
-     See *Note Installation::.
+     See *note Installation::.
 
   4. Start ECB
 
@@ -3259,7 +3259,7 @@ SINCE VERSION 2.33! Please got to the website of ECB and download and install
      See the instruction of CEDET how to do this. You will find CEDET at
      `http://cedet.sourceforge.net'
 
-     For setting up CEDET see *Note Setting up CEDET/semantic::.
+     For setting up CEDET see *note Setting up CEDET/semantic::.
 
      If you have installed a new CEDET-version you *MUST* re-byte-compile ECB
      unless you run ECB not byte-compiled!
@@ -3297,7 +3297,7 @@ If the option `ecb-auto-compatibility-check' has a non-nil value (which is
 the default) then ECB does all this stuff automatically at startup. This is
 very recommended!
 
-If you are interested in some background information, read *Note Background
+If you are interested in some background information, read *note Background
 information::!
 
 
@@ -3493,7 +3493,7 @@ situation:
    * To browse and select functions: Call `ecb-toggle-ecb-windows' or
      `ecb-show-ecb-windows' to make the ECB-method buffer visible if not
      already. If you want select a method/variable with the keyboard instead
-     with the mouse you should read the section *Note Using the keyboard:: in
+     with the mouse you should read the section *note Using the keyboard:: in
      this online help!
 
 The possibility of hiding temporally the ECB windows like described above is
@@ -3507,8 +3507,8 @@ File: ecb.info,  Node: Big screens,  Next: Simulating speedbar,  Prev: Small scr
 
 ECB offers a layout type "left-right" with special ECB-tree-windows on the
 left and right side of the edit-area. The layouts "leftright1" and
-"leftright2"are examples for this layout type.  See *Note Creating a new
-ECB-layout:: and *Note The layout-engine:: for details about how to create or
+"leftright2"are examples for this layout type.  See *note Creating a new
+ECB-layout:: and *note The layout-engine:: for details about how to create or
 program more layouts of this type.
 
 Such a layout is eventually the best choice for big screens because the
@@ -3765,7 +3765,7 @@ display files managed by a VC-system with an appropriate image-icon(1) in
 front of the filename.
 
 The following four options allow full control over this feature (see also
-*Note ecb-version-control:::
+*note ecb-version-control:::
 
 `ecb-vc-enable-support'
      Enable or disable this feature.
@@ -4021,7 +4021,7 @@ the tree-buffers of ECB will be always correct - in that sense that ECB will
 always display that state which the check-state-function for the file will
 return. At least with GNU Emacs for the backends CVS, RCS, SCCS and
 Subversion this will be true. With XEmacs only for CVS. For other backends
-see *Note Adding new backends::.
+see *note Adding new backends::.
 
 But if the VC-state of a file will be changed outside of Emacs (unfortunately
 PCL-CVS must be called "outside" too because PCL-CVS doesn't use the
@@ -4055,7 +4055,7 @@ Of course all these commands update the VC-state in all visible tree-buffers
 the file is currently displayed (e.g. often a file is displayed in the
 sources- and the history-buffer)!
 
-For general informations about the usage of popup-menus in ECB see *Note
+For general informations about the usage of popup-menus in ECB see *note
 Using the mouse:: (subsection "The right mouse button").
 
 In addition to these popup-commands using the POWER- rsp. Shift-click (*note
@@ -4083,7 +4083,7 @@ should be supported by ECB:
   2. Adding an check-state-function to `ecb-vc-supported-backends' Associated
      to the new identify-backend-function mentioned in step 1 a new
      check-state-function is needed which can be used by ECB to get the
-     VC-state for a file. See *Note Checking the state:: for a description
+     VC-state for a file. See *note Checking the state:: for a description
      about the needed interface of such a function. In combinatio with the
      identify-backend-function from step 1 this function has to be added to
      `ecb-vc-supported-backends'.
@@ -4327,7 +4327,7 @@ File: ecb.info,  Node: Non-semantic sources,  Next: Hide-show,  Prev: Compile-wi
 ECB is mostly designed to display parsing information for files supported by
 semantic. But beginning with version 1.94 it also supports other parsing
 engines like imenu and etags, so also files not supported by semantic but by
-imenu/etags can be displayed in the Method-buffer of ECB. See *Note
+imenu/etags can be displayed in the Method-buffer of ECB. See *note
 Definition of semantic- and non-semantic-sources:: for a description of
 "semantic-sources" and "non-semantic-sources".
 
@@ -4681,7 +4681,7 @@ File: ecb.info,  Node: List of variables,  Next: List of hooks,  Prev: Elisp pro
 11.1 Variables for Elisp-programs
 =================================
 
-Variables an Elisp-program can use beyond those ones mentioned in *Note The
+Variables an Elisp-program can use beyond those ones mentioned in *note The
 layout-engine:::
 
    * `ecb-source-path-functions'
@@ -4790,7 +4790,7 @@ in a tree-buffer displays exactly one tree-node. Each node has exactly one
 parent-node and can have any arbitrary number of "children"-nodes. If a
 tree-node has no children then it is called a "leaf". A tree-node contains
 several "slots" wheras the most important ones are the "name",
-"displayed-name" and "data". See *Note A new tree-node:: for a detailed
+"displayed-name" and "data". See *note A new tree-node:: for a detailed
 explanation.
 
 The difference between a natural tree like a fir and a tree-buffer is that
@@ -4821,12 +4821,12 @@ Here is an example of a tree-buffer:
 In most cases an action is triggered when clicking with the mouse onto a
 tree-node(1) (e.g. clicking onto "leaf-node-1" or "parent-node-1" in the
 example above). Which action is triggered by which key depends on what you
-specify at creation-time of the tree-buffer - see *Note A new tree-buffer::
+specify at creation-time of the tree-buffer - see *note A new tree-buffer::
 for details.
 
 The creation-interface of a tree-buffer allows defining special popup-menus
 when clicking with the right mouse-button (of course also possible via
-keyboard, see *Note Tree-buffer keybindings::) onto a tree-node (e.g. some
+keyboard, see *note Tree-buffer keybindings::) onto a tree-node (e.g. some
 senseful actions possible for directory-nodes like grepping this directory or
 performing version-control actions for this directory or something else).
 
@@ -4839,7 +4839,7 @@ beginning from creation and ending with the display.
   1. Create the tree-buffer Creating a new tree-buffer has to be done with
      `tree-buffer-create' for non ECB-tree-buffers and with the macro
      `defecb-tree-buffer-creator' when the tree-buffer should be used as an
-     ECB-tree-buffer, so it is an ECB-window. See *Note A new tree-buffer::
+     ECB-tree-buffer, so it is an ECB-window. See *note A new tree-buffer::
      for all details.
 
   2. Add tree-nodes to the tree-buffer Adding nodes to the new tree-buffer
@@ -4850,12 +4850,12 @@ beginning from creation and ending with the display.
      (avaliable via `tree-buffer-get-root') as parent-node. The next nodes
      can have either one of the fromerly added nodes or the root-node too. All
      tree-nodes haveing the root-node as parent will be displayed at the
-     toplevel of the tree-buffer. See *Note A new tree-node:: for all details.
+     toplevel of the tree-buffer. See *note A new tree-node:: for all details.
 
   3. Display the tree-buffer with current nodes and state When you are
      finished building up the tree-node-structure call `tree-buffer-update'
      to display the current tree-structure (again after making the
-     tree-buffer the current-buffer). See *Note Updating a tree-buffer:: for
+     tree-buffer the current-buffer). See *note Updating a tree-buffer:: for
      all details.
 
 *IMPORTANT*: First a call of `tree-buffer-update' updates the *display* of a
@@ -4863,14 +4863,14 @@ tree-buffer, means shows all the tree-nodes in an emacs-buffer! Neither
 creating a tree-buffer nor adding tree-nodes display anything; this just
 builds the internal tree-structure.
 
-*IMPORTANT*: See *Note Programming special windows:: for details about
+*IMPORTANT*: See *note Programming special windows:: for details about
 programming ECB-windows (special windows) regardless if they were build as
 tree or not. There you can find a.o. how to automatically synchronizing a
 special window with the current edit-buffer.
 
 ---------- Footnotes ----------
 
-(1) Of course using the keyboard is also possible, see *Note Tree-buffer
+(1) Of course using the keyboard is also possible, see *note Tree-buffer
 keybindings::.
 
 
@@ -5135,7 +5135,7 @@ contains also some examples for complex-arguments!
 `NODE-DATA-EQUAL-FN'
      Function used by the tree-buffer to test if the data of two tree-nodes
      are equal. The function is called with two args: The DATA-slots of the
-     two tree-nodes (see *Note A new tree-node:: for details about the
+     two tree-nodes (see *note A new tree-node:: for details about the
      data-slots).
 
      Here is an example (call `C-h f' to see what it does) for this
@@ -5339,7 +5339,7 @@ contains also some examples for complex-arguments!
      EXPAND-SYMBOL-BEFORE-P have no effect.
 
      Ascii-style with guide-lines (value `ascii-guides') and ascii-style
-     without guidelines (value `ascii-no-guides'. See *Note Tree-buffer
+     without guidelines (value `ascii-no-guides'. See *note Tree-buffer
      styles:: for details about the tree-styles.
 
      Both ascii-styles are affected by the args TREE-INDENT and
@@ -5475,7 +5475,7 @@ A tree-node can have the following slots:
 `TYPE'
      The type of the node; must currently be an interger! The type is used to
      classify the nodes, so for example all nodes of a certain type can
-     display the same popup-menu - see `tree-buffer-create' or *Note A new
+     display the same popup-menu - see `tree-buffer-create' or *note A new
      tree-buffer:: which parts of a tree-buffer are distinguished by
      node-types.
 
@@ -5571,7 +5571,7 @@ function `tree-node-add-children' because this functions encapsulates all the
 necessary stuff needed to add children to a node (mainly adding the children
 itself and setting the node itself as parent for every children).
 
-See *Note The tree-buffer-API:: for the rest of the API available for
+See *note The tree-buffer-API:: for the rest of the API available for
 tree-nodes.
 
 
@@ -5599,7 +5599,7 @@ Threre are two ways to update a tree-buffer for display:
      If you do not have the need to display a completely new tree-structure
      but you want only to display a previously cached display-state then pass
      this cached-state as second argument to `tree-buffer-update'. See the
-     documentation of this function and also *Note Tree-buffer How to:: for a
+     documentation of this function and also *note Tree-buffer How to:: for a
      detailled description how to do this.
 
   2. Updating only a single node of the tree-buffer:
@@ -5661,7 +5661,7 @@ automatically being bound:
 
      If point is at the expand/collape-button then depending on the
      expansion-state of the node either the callback in slot NODE-EXPANDED-FN
-     or NODE-COLLAPSED-FN is called (for parameters see again *Note A new
+     or NODE-COLLAPSED-FN is called (for parameters see again *note A new
      tree-buffer::).
 
      *IMPORTANT*: None of these callbacks must modify the slot EXPANDED of
@@ -5669,32 +5669,32 @@ automatically being bound:
      action-dispatcher!
 
      At the end the dispatcher updates the tree-buffer-display with optimized
-     display of the clicked/selected node - see *Note Updating a
+     display of the clicked/selected node - see *note Updating a
      tree-buffer::. This means `tree-buffer-update' is called with that node
      as argument.
 
 `TAB'
      Depending on the expansion-state of the node either the callback in slot
      NODE-EXPANDED-FN or NODE-COLLAPSED-FN is called (for parameters see
-     again *Note A new tree-buffer::).
+     again *note A new tree-buffer::).
 
      *IMPORTANT*: None of these callbacks must modify the slot EXPANDED of
      the passed node because this is done automatically by the
      action-dispatcher!
 
      At the end the the tree-buffer-display is updated with optimized display
-     of the clicked/selected node - see *Note Updating a tree-buffer::. This
+     of the clicked/selected node - see *note Updating a tree-buffer::. This
      means `tree-buffer-update' is called with that node as argument.
 
 `mouse-3'
      Activates the popup-menu for the current tree-buffer for current
-     node-type (if defined). See *Note A new tree-buffer:: at argument
+     node-type (if defined). See *note A new tree-buffer:: at argument
      MENU-CREATOR and MENU-TITLES. These callbacks are called for getting the
      menu and the menu-title.
 
 `modeline-mouse-3'
      Activates the popup-menu for the modeline of the current tree-buffer (if
-     defined). See *Note A new tree-buffer:: at argument
+     defined). See *note A new tree-buffer:: at argument
      MODELINE-MENU-CREATOR. This callback is called for getting the
      modeline-menu.
 
@@ -5709,13 +5709,13 @@ automatically being bound:
 `<left>'
 `<right>'
      These keys are bound to the command `tree-buffer-arrow-pressed' which
-     implements the smart arrow-key-navigation described in *Note A new
+     implements the smart arrow-key-navigation described in *note A new
      tree-buffer:: at argument ARROW-NAVIGATION.
 
 
 In addition to these automatically bound keys you can add further keybindings
 to the local-keymap of the tree-buffer with the parameter AFTER-CREATE-HOOK
-of `tree-buffer-create'. See *Note A new tree-buffer:: for an example which
+of `tree-buffer-create'. See *note A new tree-buffer:: for an example which
 binds `C-t' in this hook.
 
 
@@ -5817,7 +5817,7 @@ details how to use it.
    * `tree-node-toggle-expanded'
 
 In addition to these functions the tree-node API contains all accessors for a
-tree-node which are described in *Note A new tree-node::.
+tree-node which are described in *note A new tree-node::.
 
 ---------- Footnotes ----------
 
@@ -5841,11 +5841,11 @@ tree-buffer set in `ecb-tree-buffers'!
 Variable `tree-buffer-displayed-nodes': Only for internal use!  Contains all
 the current visible nodes of current tree-buffer in top-to-bottom order. This
 variable is buffer-local in each tree-buffer! Do not use it directly! When
-you want to cache the current display, then see *Note Tree-buffer How to::
+you want to cache the current display, then see *note Tree-buffer How to::
 how to do this.
 
 *IMPORTANT*: An application may only use the API tree-buffer.el provides but
-no internal variables - see *Note The tree-buffer-API::!
+no internal variables - see *note The tree-buffer-API::!
 
 
 File: ecb.info,  Node: Tree-buffer How to,  Prev: Do not with tree-buffer,  Up: tree-buffer
@@ -5991,7 +5991,7 @@ special windows than the standard ECB-windows then it's still recommended to
 define this layout interactively with `ecb-create-new-layout' and using the
 option to give the created windows user-defined types. For every user defined
 type you have then just to program the necessary buffer-set function. For all
-the details see *Note Creating a new ECB-layout::.
+the details see *note Creating a new ECB-layout::.
 
 But if you do not like the interactive way (because you are tough and brave)
 but you want programming the new layout with Elisp then use the macro

@@ -126,7 +126,9 @@ disabled for all buffers."
 
 (defcustom highlight-symbol-colors
   '("RoyalBlue1" "OliveDrab" "DeepPink" "MediumPurple1" 
-    "DarkOrange" "HotPink1" "cyan" "SpringGreen1" "yellow")
+    "DarkOrange" "brightred" "color-172" "color-166" "color-142"
+    "color-136" "color-130" "color-100" "color-94" "color-88"
+    "color-70" "color-64" "color-58" "color-52")
   "*Colors used by `highlight-symbol-at-point'.
 highlighting the symbols will use these colors in order."
   :type '(repeat color)

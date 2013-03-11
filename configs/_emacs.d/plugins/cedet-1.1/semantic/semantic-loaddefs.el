@@ -75,7 +75,7 @@ list of semantic tokens found.
 ;;;### (autoloads (semantic-c-add-preprocessor-symbol semantic-default-c-setup
 ;;;;;;  semantic-c-member-of-autocast semantic-lex-c-preprocessor-symbol-file
 ;;;;;;  semantic-lex-c-preprocessor-symbol-map) "bovine/semantic-c"
-;;;;;;  "bovine/semantic-c.el" (20362 59692))
+;;;;;;  "bovine/semantic-c.el" (20461 4983))
 ;;; Generated autoloads from bovine/semantic-c.el
 
 (defvar semantic-lex-c-preprocessor-symbol-map nil "\
@@ -1924,7 +1924,7 @@ Argument ARG specifies which set of tests to run.
 ;;;### (autoloads (global-semantic-idle-scheduler-mode semantic-idle-scheduler-remove
 ;;;;;;  semantic-idle-scheduler-add semantic-idle-scheduler-mode
 ;;;;;;  global-semantic-idle-scheduler-mode) "semantic-idle" "semantic-idle.el"
-;;;;;;  (20362 59691))
+;;;;;;  (20687 52718))
 ;;; Generated autoloads from semantic-idle.el
 
 (defvar global-semantic-idle-scheduler-mode nil "\
@@ -4130,7 +4130,7 @@ Setup buffer for parse.
 ;;;;;;  "wisent/wisent-cim-wy.el" "wisent/wisent-expr.el" "wisent/wisent-grammar-macros.el"
 ;;;;;;  "wisent/wisent-java-tags-wy.el" "wisent/wisent-java-wy.el"
 ;;;;;;  "wisent/wisent-javascript-jv-wy.el" "wisent/wisent-python-wy.el")
-;;;;;;  (20509 60869 996184))
+;;;;;;  (20740 33165 963399))
 
 ;;;***
 

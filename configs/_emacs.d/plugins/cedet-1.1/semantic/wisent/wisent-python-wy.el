@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2002, 2003, 2004, 2007, 2012 Richard Kim
 
-;; Author: stesen <stesen@debian>
-;; Created: 2012-08-05 11:50:04+0800
+;; Author: stesen <stesen@OS-kernel>
+;; Created: 2012-06-28 09:25:36+0800
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 
@@ -715,6 +715,10 @@
 ;;
 (require 'semantic-lex)
 
+(define-lex-keyword-type-analyzer wisent-python-wy--<keyword>-keyword-analyzer
+  "keyword analyzer for <keyword> tokens."
+  "\\(\\sw\\|\\s_\\)+")
+
 (define-lex-block-type-analyzer wisent-python-wy--<block>-block-analyzer
   "block analyzer for <block> tokens."
   "\\s(\\|\\s)"
@@ -725,6 +729,18 @@
     ("}" RBRACE)
     ("]" RBRACK))
   )
+
+(define-lex-regex-type-analyzer wisent-python-wy--<symbol>-regexp-analyzer
+  "regexp analyzer for <symbol> tokens."
+  "\\(\\sw\\|\\s_\\)+"
+  nil
+  'NAME)
+
+(define-lex-regex-type-analyzer wisent-python-wy--<number>-regexp-analyzer
+  "regexp analyzer for <number> tokens."
+  semantic-lex-number-expression
+  nil
+  'NUMBER_LITERAL)
 
 (define-lex-string-type-analyzer wisent-python-wy--<punctuation>-string-analyzer
   "string analyzer for <punctuation> tokens."
@@ -769,22 +785,6 @@
     (GTGTEQ . ">>=")
     (LTLTEQ . "<<="))
   'punctuation)
-
-(define-lex-regex-type-analyzer wisent-python-wy--<symbol>-regexp-analyzer
-  "regexp analyzer for <symbol> tokens."
-  "\\(\\sw\\|\\s_\\)+"
-  nil
-  'NAME)
-
-(define-lex-regex-type-analyzer wisent-python-wy--<number>-regexp-analyzer
-  "regexp analyzer for <number> tokens."
-  semantic-lex-number-expression
-  nil
-  'NUMBER_LITERAL)
-
-(define-lex-keyword-type-analyzer wisent-python-wy--<keyword>-keyword-analyzer
-  "keyword analyzer for <keyword> tokens."
-  "\\(\\sw\\|\\s_\\)+")
 
 
 ;;; Epilogue

@@ -1,0 +1,143 @@
+(provide 'setq-configs)
+
+(setq user-full-name "MaYaohui 00194513")
+(setq user-mail-address "stesencina@gmail.com")
+(setq bookmark-default-file "~/.emacs.tmpfile/.emacs.bmk")
+(setq abbrev-file-name "~/.emacs.d/.abbrev_defs") 
+(setq version-control t) 
+(setq kept-old-versions 2)
+(setq kept-new-versions 5) 
+(setq delete-old-versions t)
+(setq backup-directory-alist '(("." . "~/.emacs.tmp"))) 
+(setq backup-by-copying t) 
+(setq stack-trace-on-error '(buffer-read-only))
+(setq default-line-spacing 0)
+(setq default-major-mode 'text-mode)
+(setq kill-ring-max 200)
+(transient-mark-mode t)
+(setq scroll-margin 5
+      scroll-conservatively 10000)
+;(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+;(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+(show-paren-mode t)
+(setq show-paren-style 'parentheses)
+(setq resize-mini-windows nil)
+(setq enable-recursive-minibuffers t)
+(setq suggest-key-bindings 1) ;;
+(setq-default make-backup-files nil)
+(setq font-lock-maximum-decoration t)
+(setq tab-always-indent nil)
+(setq initial-scratch-message nil)
+(setq inhibit-startup-message t)
+;(setq use-file-dialog nil)
+;(setq use-dialog-box nil)
+;(setq inhibit-startup-screen t)
+;(partial-completion-mode 1) 
+(setq resize-mini-windows t) 
+(setq uniquify-buffer-name-style 'forward) 
+(setq Man-notify-method 'pushy) 
+(auto-image-file-mode) 
+(auto-compression-mode 1) 
+(setq default-fill-column 120)
+(setq-default make-backup-files nil)
+(blink-cursor-mode t) 
+(show-paren-mode 1)
+(mouse-wheel-mode 1)
+(setq scroll-step 1 
+      scroll-margin 3 
+      scroll-conservatively 10000) 
+
+(setq sentence-end "\\([¡££¡£¿]\\|¡¡\\|[.?!][]\"')}]*\\($\\|[ \t]\\)\\)[ \t\n]*") 
+(setq sentence-end-double-space nil) 
+(setq next-line-add-newlines nil) 
+
+(setq track-eol t) 
+(setq-default kill-whole-line t) 
+(setq kill-ring-max 200) 
+(setq apropos-do-all t) 
+(setq-default ispell-program-name "aspell") 
+(put 'narrow-to-region 'disabled nil) 
+(setq frame-title-format "%b@vj.org") 
+
+;(setq x-select-enable-clipboard t)
+(setq x-select-enable-clipboard nil)
+(setq x-select-enable-primary t)
+
+(setq font-encoding-alist 
+      (append '(("MuleTibetan-0" (tibetan . 0)) 
+		("GB2312" (chinese-gb2312 . 0)) 
+		("JISX0208" (japanese-jisx0208 . 0)) 
+		("JISX0212" (japanese-jisx0212 . 0)) 
+		("VISCII" (vietnamese-viscii-lower . 0)) 
+		("KSC5601" (korean-ksc5601 . 0)) 
+		("MuleArabic-0" (arabic-digit . 0)) 
+		("MuleArabic-1" (arabic-1-column . 0)) 
+		("MuleArabic-2" (arabic-2-column . 0))) font-encoding-alist)) 
+
+(setq calendar-remove-frame-by-deleting t) 
+(setq calendar-week-start-day 1) 
+(setq christian-holidays nil) 
+(setq hebrew-holidays nil) 
+(setq islamic-holidays nil) 
+(setq chinese-calendar-celestial-stem 
+      ["甲" "乙" "丙" "丁" "戊" "己" "庚" "辛" "壬" "癸"]) 
+(setq chinese-calendar-terrestrial-branch 
+      ["子" "丑" "寅" "卯" "辰" "巳" "戊" "未" "申" "酉" "戌" "亥"]) 
+
+(setq column-number-mode t)
+(xterm-mouse-mode t)
+
+(setq tab-width 8)
+(setq default-tab-width 8)
+(setq indent-tabs-mode t)
+(setq-default transient-mark-mode t)
+(setq fill-column 120)
+
+
+(setq frame-title-format '("%f"))
+(global-linum-mode t)
+(column-number-mode t)
+(setq line-number-mode t)
+(fset 'yes-or-no-p 'y-or-n-p)
+(setq visible-bell nil)
+(show-paren-mode t)
+(setq lazy-lock-defer-on-scrolling t)
+
+(set-clipboard-coding-system 'ctext)
+(setq mouse-yank-at-point t);支持中键粘贴
+
+(setq default-abbrev-mode t)
+(setq abbrev-file-name             ;; tell emacs where to read abbrev
+      "~/.emacs.d/abbrev_defs")    ;; definitions from...
+(setq font-lock-maximum-decoration t)
+(setq tags-file-name "TAGS")
+(setq mouse-sel-mode t)
+;;(defun track-mouse (e))
+
+(setq indicate-empty-lines t)
+
+(require 'highlight-tail)
+(setq highlight-tail-colors
+      '(("black" . 0)
+	("#bc2525" . 25)
+	("black" . 66)))
+
+'(auto-fill-mode t)
+(setq make-backup-files nil)
+(setq auto-save-mode nil)
+(setq make-backup-files nil)
+(setq bookmark-save-flag 1)
+
+(defun tab-2 ()
+ (interactive)
+ (setq tab-width 2)
+ (setq default-tab-width 2))
+(defun tab-4 ()
+ (interactive)
+ (setq tab-width 4)
+ (setq default-tab-width 4))
+(defun tab-8 ()
+ (interactive)
+ (setq tab-width 8)
+ (setq default-tab-width 8))

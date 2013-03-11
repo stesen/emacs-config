@@ -3175,10 +3175,10 @@ See Info node `(ecb)tree-buffer' for all details of using tree-buffers."
     (define-key tree-buffer-key-map (kbd "M-m")
       'tree-buffer-show-node-menu-keyboard)
 
-;;     (mapc (function
-;;            (lambda (key)
-;;              (tree-buffer-define-mouse-key 1 key)))
-;;           '(nil shift control meta))
+    (mapc (function
+           (lambda (key)
+             (tree-buffer-create-mouse-key 1 key)))
+          '(nil shift control meta))
 
     (macrolet ((tbc-define-mouse-key-1/2 (button key)
                 `(progn

@@ -1,0 +1,37 @@
+x
+exit
+man man
+cd
+vim 
+source build/envsetup.sh 
+ls
+cd bootimage/
+ls
+cd ..
+ls
+cd ba
+cd backup/
+ls
+ls
+ls
+cd ..
+ls
+ll
+ls -l
+cd k3-jellybean/
+ls
+cd ..
+pydf
+ls
+cd cprm_sd_driver/
+l;s
+ls
+cd drivers/
+ls
+cd mmc/
+ls
+cd host/
+ls
+emacs emxx_sdc.h
+emxx_sdc.h
+edit emxx_sdc.h

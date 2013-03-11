@@ -16,7 +16,7 @@
   "Control the font size of function call"
   :type 'boolean :group 'zjl-hl)
 ;;;###autoload
-(defcustom zjl-hl-c-mode-enable-flag t
+(defcustom zjl-hl-c-mode-enable-flag nil
   "Enable c mode highlight when zjl-hl-enable-global-all is called"
   :type 'boolean :group 'zjl-hl)
 ;;;###autoload
@@ -24,7 +24,7 @@
   "Enable c++ mode highlight when zjl-hl-enable-global-all is called.
 Currently only c style file but named as *.cpp is supported"
   :type 'boolean :group 'zjl-hl)
-(defcustom zjl-hl-elisp-mode-enable-flag t
+(defcustom zjl-hl-elisp-mode-enable-flag nil
   "Enable emacs lisp mode highlight when zjl-hl-enable-global-all is called."
   :type 'boolean :group 'zjl-hl)
 
@@ -109,7 +109,7 @@ enough performance."
 (defface zjl-hl-function-call-face
   '((((class color)
       (background dark))
-     (:foreground "#e566d7" :weight normal))
+     (:foreground "#4560ed" :weight normal))
     (((class color)
       (background light))
      (:foreground "#008000" :bold t))
@@ -200,10 +200,10 @@ enough performance."
        (cons zjl-hl-brackets-regexp 'zjl-hl-font-lock-bracket-face)
        (cons zjl-hl-types-regexp 'font-lock-type-face)
        (cons zjl-hl-warning-words-regexp 'font-lock-warning-face)
-       '("\\(\\_<\\(?:\\(?:0x[0-9a-fA-F]*\\)\\|\\(?:[0-9]+\\(\\.[0-9]+\\)?\\)\\|\\(?:0[0-7]*\\)\\|\\(?:[01]+b\\)\\)\\_>\\)"
-        0  zjl-hl-number-face keep)
-       '("\\(?:\\.\\|->\\)\\(\\_<\\(?:\\w\\|\\s_\\)+\\_>\\)"
-         1  zjl-hl-member-reference-face keep)
+       ;; '("\\(\\_<\\(?:\\(?:0x[0-9a-fA-F]*\\)\\|\\(?:[0-9]+\\(\\.[0-9]+\\)?\\)\\|\\(?:0[0-7]*\\)\\|\\(?:[01]+b\\)\\)\\_>\\)"
+       ;;  0  zjl-hl-number-face keep)
+       ;; '("\\(?:\\.\\|->\\)\\(\\_<\\(?:\\w\\|\\s_\\)+\\_>\\)"
+       ;;   1  zjl-hl-member-reference-face keep)
        '("\\(\\_<\\(\\w\\|\\s_\\)+\\_>\\)[ 	]*("
          1  zjl-hl-function-call-face keep)
        ))

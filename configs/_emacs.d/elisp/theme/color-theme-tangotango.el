@@ -50,7 +50,7 @@
   (interactive)
   (color-theme-install
    '(color-theme-tangotango
-     ((background-color . "#2e3434")
+     ((background-color . "#222222")
       (background-mode . dark)
       (border-color . "#888a85")
       (foreground-color . "#eeeeec")
@@ -63,7 +63,7 @@
       (ibuffer-read-only-buffer-face . font-lock-type-face)
       (ibuffer-special-buffer-face . font-lock-keyword-face)
       (ibuffer-title-face . font-lock-type-face))
-     (cursor ((t (:background "#fce94f" :foreground "#222222"))))
+     (cursor ((t (:background "#ff7e00" :foreground "#222222"))))
      (highlight ((t (:background "brown4" :foreground nil))))
      (border ((t (:background "#888a85"))))
      (fringe ((t (:background "grey10"))))

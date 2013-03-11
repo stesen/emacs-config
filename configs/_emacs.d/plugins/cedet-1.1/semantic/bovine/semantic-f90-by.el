@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2010 Free Software Foundation
 
-;; Author: stesen <stesen@debian>
-;; Created: 2012-08-05 11:50:10+0800
+;; Author: stesen <stesen@OS-kernel>
+;; Created: 2012-06-28 09:25:42+0800
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

@@ -174,7 +174,8 @@ minor mode is enabled."
             (setq semantic-idle-scheduler-mode nil)
             (error "Buffer %s was not set up idle time scheduling"
                    (buffer-name)))
-        (semantic-idle-scheduler-setup-timers)))
+        ;(semantic-idle-scheduler-setup-timers)
+	))
   semantic-idle-scheduler-mode)
 
 ;;;###autoload

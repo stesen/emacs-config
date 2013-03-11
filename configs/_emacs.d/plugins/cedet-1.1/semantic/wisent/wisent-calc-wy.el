@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2002, 2003, 2009 David Ponce
 
-;; Author: stesen <stesen@debian>
-;; Created: 2012-08-05 11:49:58+0800
+;; Author: stesen <stesen@OS-kernel>
+;; Created: 2012-06-28 09:25:31+0800
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 1999, 2000, 2001, 2002, 2003, 2004, 2008 Eric M. Ludlam
 
-;; Author: stesen <stesen@debian>
-;; Created: 2012-08-05 11:50:09+0800
+;; Author: stesen <stesen@OS-kernel>
+;; Created: 2012-06-28 09:25:41+0800
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

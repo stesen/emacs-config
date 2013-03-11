@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2005-2011 Free Software Foundation, Inc.
 
-;; Author: stesen <stesen@debian>
-;; Created: 2012-08-05 11:50:05+0800
+;; Author: stesen <stesen@OS-kernel>
+;; Created: 2012-06-28 09:25:37+0800
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 
@@ -389,6 +389,38 @@
 ;;
 (require 'semantic-lex)
 
+(define-lex-keyword-type-analyzer wisent-javascript-jv-wy--<keyword>-keyword-analyzer
+  "keyword analyzer for <keyword> tokens."
+  "\\(\\sw\\|\\s_\\)+")
+
+(define-lex-block-type-analyzer wisent-javascript-jv-wy--<block>-block-analyzer
+  "block analyzer for <block> tokens."
+  "\\s(\\|\\s)"
+  '((("(" OPEN_PARENTHESIS PAREN_BLOCK)
+     ("{" START_BLOCK BRACE_BLOCK)
+     ("[" OPEN_SQ_BRACKETS BRACK_BLOCK))
+    (")" CLOSE_PARENTHESIS)
+    ("}" END_BLOCK)
+    ("]" CLOSE_SQ_BRACKETS))
+  )
+
+(define-lex-regex-type-analyzer wisent-javascript-jv-wy--<symbol>-regexp-analyzer
+  "regexp analyzer for <symbol> tokens."
+  "\\(\\sw\\|\\s_\\)+"
+  nil
+  'VARIABLE)
+
+(define-lex-sexp-type-analyzer wisent-javascript-jv-wy--<string>-sexp-analyzer
+  "sexp analyzer for <string> tokens."
+  "\\s\""
+  'STRING)
+
+(define-lex-regex-type-analyzer wisent-javascript-jv-wy--<number>-regexp-analyzer
+  "regexp analyzer for <number> tokens."
+  semantic-lex-number-expression
+  nil
+  'NUMBER)
+
 (define-lex-string-type-analyzer wisent-javascript-jv-wy--<punctuation>-string-analyzer
   "string analyzer for <punctuation> tokens."
   "\\(\\s.\\|\\s$\\|\\s'\\)+"
@@ -433,38 +465,6 @@
     (BITWISE_AND . "&")
     (ASSIGN_SYMBOL . "="))
   'punctuation)
-
-(define-lex-block-type-analyzer wisent-javascript-jv-wy--<block>-block-analyzer
-  "block analyzer for <block> tokens."
-  "\\s(\\|\\s)"
-  '((("(" OPEN_PARENTHESIS PAREN_BLOCK)
-     ("{" START_BLOCK BRACE_BLOCK)
-     ("[" OPEN_SQ_BRACKETS BRACK_BLOCK))
-    (")" CLOSE_PARENTHESIS)
-    ("}" END_BLOCK)
-    ("]" CLOSE_SQ_BRACKETS))
-  )
-
-(define-lex-regex-type-analyzer wisent-javascript-jv-wy--<symbol>-regexp-analyzer
-  "regexp analyzer for <symbol> tokens."
-  "\\(\\sw\\|\\s_\\)+"
-  nil
-  'VARIABLE)
-
-(define-lex-regex-type-analyzer wisent-javascript-jv-wy--<number>-regexp-analyzer
-  "regexp analyzer for <number> tokens."
-  semantic-lex-number-expression
-  nil
-  'NUMBER)
-
-(define-lex-sexp-type-analyzer wisent-javascript-jv-wy--<string>-sexp-analyzer
-  "sexp analyzer for <string> tokens."
-  "\\s\""
-  'STRING)
-
-(define-lex-keyword-type-analyzer wisent-javascript-jv-wy--<keyword>-keyword-analyzer
-  "keyword analyzer for <keyword> tokens."
-  "\\(\\sw\\|\\s_\\)+")
 
 
 ;;; Epilogue

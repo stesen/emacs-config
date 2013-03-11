@@ -1,4 +1,4 @@
-This is ecb.info, produced by makeinfo version 4.8 from ecb.texi.
+This is ecb.info, produced by makeinfo version 4.13 from ecb.texi.
 
 INFO-DIR-SECTION GNU Emacs Lisp
 START-INFO-DIR-ENTRY
@@ -47,7 +47,7 @@ informational windows should be displayed where. ECB comes with a number of
 ready-made window layouts to choose from.
 
 *Please note*: Experienced ECB users find a complete alphabetical list of all
-commands and user-options in *Note Interactive ECB commands:: and *Note
+commands and user-options in *note Interactive ECB commands:: and *note
 Customizable options::.
 
 The latest version of ECB can always be found at the URL
@@ -583,7 +583,7 @@ concerning your Emacs-setup:
      do this. With CEDET-versions >= 1.0pre6 this can be done by adding
      `semantic-load-enable-minimum-features' to your startup-file. Please read
      also the subsection "Jumping to the definition of external types" in
-     *Note ECB Methods-window::.
+     *note ECB Methods-window::.
 
   2. Checking your hooks
 
@@ -706,8 +706,8 @@ ECB offers some basic ECB-windows to browse your sources:
 
    - ECB-Methods for browsing the contents of a source
 
-See *Note Basic ECB-windows:: for a detailled description what these basic
-ECB-windows offer. See *Note ECB-windows:: for a general introduction in the
+See *note Basic ECB-windows:: for a detailled description what these basic
+ECB-windows offer. See *note ECB-windows:: for a general introduction in the
 ECB-window-concept of ECB.
 
 In addition to these "special" ECB-windows you have always an "edit-area"
@@ -744,7 +744,7 @@ The following "screenshot" illustrates the typical layout of the ECB-frame(1):
 
 ---------- Footnotes ----------
 
-(1) This is only one example of the layouts ECB offers, see *Note Changing
+(1) This is only one example of the layouts ECB offers, see *note Changing
 the ECB-layout::
 
 
@@ -753,7 +753,7 @@ File: ecb.info,  Node: Manual usage,  Next: ECB-windows,  Prev: Overview,  Up: T
 3 How to use this manual
 ************************
 
-*IMPORTANT*: You should have read the chapter *Note Overview:: before going
+*IMPORTANT*: You should have read the chapter *note Overview:: before going
 on reading the current chapter.
 
 This chapter describes shortly the contents of the following chapters of this
@@ -848,8 +848,8 @@ File: ecb.info,  Node: Basic ECB-windows,  Next: Add-on ECB-windows,  Prev: ECB-
 ECB offers basic ECB-windows for browsing directory-structures, files of a
 directory and contents of source-files (e.g. methods and variables). These
 basic ECB-windows are build from a special class of ECB-windows, called
-"tree-buffer". See *Note Tree-buffer basics:: for more details about the
-functionality of tree-buffers. See *Note Tree-buffer styles:: to get an
+"tree-buffer". See *note Tree-buffer basics:: for more details about the
+functionality of tree-buffers. See *note Tree-buffer styles:: to get an
 impression about the look&feel of these tree-buffers.
 
 In the following subsections these basic ECB-windows of ECB will be explained
@@ -920,13 +920,13 @@ edit-area) "jumps" to the location of this tag in the source-buffer in the
 edit-area (*note ECB Methods-window::).
 
 Almost every ECB-window of ECB offers a special popup-menu when clicking with
-the right mouse-button (of course also possible via keyboard, see *Note Using
+the right mouse-button (of course also possible via keyboard, see *note Using
 the keyboard::) onto a tree-node (e.g. some senseful actions possible for
 directory-nodes like grepping this directory or performing version-control
 actions for this directory or something else).
 
-See *Note ECB Directories-window::, *Note ECB Sources-window::, *Note ECB
-Methods-window:: and *Note Add-on ECB-windows:: for a detailed description
+See *note ECB Directories-window::, *note ECB Sources-window::, *note ECB
+Methods-window:: and *note Add-on ECB-windows:: for a detailed description
 which actions are triggered and which popup-menus are offered in all the
 ECB-windows of ECB.
 
@@ -951,7 +951,7 @@ This feature is only available for GNU Emacs >= 21.
 
 ---------- Footnotes ----------
 
-(1) Of course using the keyboard is also possible, see *Note Using the
+(1) Of course using the keyboard is also possible, see *note Using the
 keyboard::.
 
 
@@ -1163,7 +1163,7 @@ browsed with the directories-interactor.
 When a sources ECB-window is contained in the current layout then per default
 only directories and subdirectories are displayed in the directories
 tree-buffer (the source-files are displayed in the sources tree-buffer - see
-*Note ECB Sources-window::) but this can be changed with the option
+*note ECB Sources-window::) but this can be changed with the option
 `ecb-show-sources-in-directories-buffer'.
 
 4.1.3.1 Usage of the directories ECB-window
@@ -1172,7 +1172,7 @@ tree-buffer (the source-files are displayed in the sources tree-buffer - see
    * Select directories (and - if enabled - source files) in the
      "ECB-Directories" buffer by clicking a mouse button on the directory
      name or by hitting RETURN when the cursor is placed on the item line,
-     see *Note Usage of ECB::.
+     see *note Usage of ECB::.
 
      IMPORTANT: If you use the POWER-click (i.e. hold down the SHIFT-key
      while clicking with the primary mouse button (*note Using the mouse::)
@@ -1183,7 +1183,7 @@ tree-buffer (the source-files are displayed in the sources tree-buffer - see
    * Directory names with a "[+]" symbol after (or before) them can be
      expanded/collapsed by clicking on the symbol, pressing the TAB key
      (*note Using the keyboard::) when the cursor is placed on the package
-     line or clicking a mouse button on the item, see *Note Using the mouse::.
+     line or clicking a mouse button on the item, see *note Using the mouse::.
 
    * Right clicking on an item will open a popup menu where different
      operations on the item under the mouse cursor can be performed. This
@@ -1198,7 +1198,7 @@ tree-buffer (the source-files are displayed in the sources tree-buffer - see
 
 When source-files-nodes are displayed in the directories-buffer (see
 `ecb-show-sources-in-directories-buffer') then for these nodes all
-descriptions of section *Note ECB Sources-window:: are valid.
+descriptions of section *note ECB Sources-window:: are valid.
 
 4.1.3.2 Activating/Displaying the directories ECB-window
 ........................................................
@@ -1211,7 +1211,7 @@ type "directories" into this new layout (*note Creating a new ECB-layout::).
 4.1.3.3 Customizing the directories ECB-window
 ..............................................
 
-See *Note ecb-directories:: for a list of all options currently available for
+See *note ecb-directories:: for a list of all options currently available for
 customizing this ECB-windows to your needs.
 
 
@@ -1269,7 +1269,7 @@ ecb-layout via the command `ecb-create-new-layout' and add a buffer of type
 4.1.4.3 Customizing the ECB-Sources-window
 ..........................................
 
-See *Note ecb-sources:: for a list of all options currently available for
+See *note ecb-sources:: for a list of all options currently available for
 customizing this ECB-window to your needs.
 
 
@@ -1329,7 +1329,7 @@ ecb-layout via the command `ecb-create-new-layout' and add a buffer of type
 ...................................................................
 
 First a preliminary remark: Do not confuse this chapter with that
-synchronizing described in *Note ECB-window synchronizing::. The latter one
+synchronizing described in *note ECB-window synchronizing::. The latter one
 describes the mechanism for synchronizing the ECB-windows when the
 current-buffer in the edit-area has been changed. This chapter describes how
 to synchronize the ECB-methods-window with the contents of the current-buffer
@@ -1379,7 +1379,7 @@ quite annoying with big source-files.
 
 To make a long story short: It is strongly recommended to enable the
 `semantic-idle-scheduler-mode' or `global-semantic-idle-scheduler-mode'! See
-*Note Setting up CEDET/semantic::. This will give you in all cases the
+*note Setting up CEDET/semantic::. This will give you in all cases the
 behavior you would expect of en IDE like ECB/semantic.
 
 4.1.5.4 Synchronizing with indirect buffers
@@ -1552,7 +1552,7 @@ job:
 
      ECB itself is quite stupid concerning finding external tags. But it can
      use the semantic-analyzer of the CEDET-suite (remember: The CEDET-suite
-     is a must-requirement of ECB, see *Note Requirements::). But this in
+     is a must-requirement of ECB, see *note Requirements::). But this in
      turn means that the semantic-analyzer must be customized in the right
      way for the needs of your programing projects. Mainly this means
      activating semanticdb and setting the correct include-path etc...
@@ -1601,7 +1601,7 @@ job:
 4.1.5.6 Customizing the methods ECB-window
 ..........................................
 
-See *Note ecb-methods:: for a list of all options currently available for
+See *note ecb-methods:: for a list of all options currently available for
 customizing this ECB-window to your needs.
 
 
@@ -1755,7 +1755,7 @@ history-window.
 4.1.6.6 Customizing the ECB-History-window
 ..........................................
 
-See *Note ecb-history:: for a list of all options currently available for
+See *note ecb-history:: for a list of all options currently available for
 customizing this ECB-windows to your needs.
 
 
@@ -1792,7 +1792,7 @@ on), and a list of all possible completions (see
 `semantic-analyze-possible-completions' for more details about completions
 available via the semantic-analyser).
 
-The analyser-ECB-window is of type tree-buffer. See *Note Tree-buffer
+The analyser-ECB-window is of type tree-buffer. See *note Tree-buffer
 basics:: for basic informations how to use such a tree-buffer.
 
 4.2.1.1 Usage of the analyser-ECB-window
@@ -1814,7 +1814,7 @@ basics:: for basic informations how to use such a tree-buffer.
      that was recently analyzed will be replaced with the name of the tag
      that was clicked on in the analyser-ECB-window.
 
-   * Right clicking with the mouse (or with the keyboard, see *Note Using
+   * Right clicking with the mouse (or with the keyboard, see *note Using
      popup-menus::) onto a tree-node opens a popup-menu which allows to
      display additional (if available) informations to the current node.
 
@@ -1824,7 +1824,7 @@ basics:: for basic informations how to use such a tree-buffer.
 Per default the content of the analyser-ECB-window is automatically
 synchronized and updated with current point of the current source-buffer in
 the edit-area (see `ecb-analyse-buffer-sync' and most notably
-`ecb-analyse-buffer-sync-delay') and *Note ECB-window synchronizing::).
+`ecb-analyse-buffer-sync-delay') and *note ECB-window synchronizing::).
 
 In contrary to the sync-options of the basic ECB-windows(2) the default
 synchronisation delay of the ECB-analyse-window is quite high: 2 seconds (see
@@ -1882,7 +1882,7 @@ ECB offers the following commands for the analyser-ECB-window:
 
    - `ecb-maximize-window-analyse'
 
-See *Note Interactive ECB commands:: for details about these commands.
+See *note Interactive ECB commands:: for details about these commands.
 
 4.2.1.4 Activating/Displaying the analyser-ECB-window
 .....................................................
@@ -1895,7 +1895,7 @@ command `ecb-create-new-layout' and add a buffer of type "other" and name
 4.2.1.5 Customizing the analyser ECB-window
 ...........................................
 
-See *Note ecb-analyse:: for a list of all options currently available for
+See *note ecb-analyse:: for a list of all options currently available for
 customizing this ECB-window to your needs.
 
 ---------- Footnotes ----------
@@ -1903,7 +1903,7 @@ customizing this ECB-window to your needs.
 (1) Note that ECB uses analyser (with s) whereas semantic uses analyzer (with
 z).
 
-(2) see *Note Basic ECB-windows:: and the options `ecb-basic-buffer-sync' and
+(2) see *note Basic ECB-windows:: and the options `ecb-basic-buffer-sync' and
 `ecb-basic-buffer-sync-delay'.
 
 
@@ -1990,7 +1990,7 @@ different window-configurations.
 `window-manager support'
      The window-manager support of ECB deactivates ECB when going to another
      window-configuration and reactivates ECB when coming back to the
-     ECB-window-configuration. For all details about this see *Note
+     ECB-window-configuration. For all details about this see *note
      Window-managers and ECB::.
 
 
@@ -2192,7 +2192,7 @@ In the ECB-buffers RETURN and TAB are the most important keys:
    * RETURN does the same as the primary button and C-RETURN does the same as
      the secondary button. S-RETURN is the same as the SHIFT-click or
      POWER-click. The terms "primary", "secondary", "SHIFT-" and
-     "POWER-click" are explained in *Note Using the mouse::. See also the
+     "POWER-click" are explained in *note Using the mouse::. See also the
      option `ecb-tree-do-not-leave-window-after-select' and the function
      `ecb-toggle-do-not-leave-window-after-select' which is bound to `C-t' in
      each tree-buffer of ECB!
@@ -2687,7 +2687,7 @@ commands::).
 
 There are some more useful options and commands related to the compile-window
 of ECB (to see all options for the compile-window see the customization group
-*Note ecb-compilation::):
+*note ecb-compilation::):
 
    * With the option `ecb-compile-window-temporally-enlarge' you can allow
      Emacs to enlarge temporally the ECB-compile-window in some situations.
@@ -3150,7 +3150,7 @@ Normally ECB gets all informations displayed in this Methods-buffer from the
 semantic-library - at least for semantic-sources. This library parses auto.
 the current source-buffer in the edit-window of ECB and returns all
 information in form of "tags" to ECB which displays them in a browse-able
-form in its Method-buffer. See *Note ECB Methods-window:: for information how
+form in its Method-buffer. See *note ECB Methods-window:: for information how
 to use the Methods-buffer.
 
 There are several options to customize which tags ECB should display in
@@ -3401,7 +3401,7 @@ i.e. each source-buffer can have its own tag-filters.
 These tag-filters can also applied to sources which are not supported by the
 semantic-parser but "only" by imenu or etags. But because for these sources
 not all information are avaiable the protection- and tag-class filter are not
-offered with such "non-semantic"-sources.  See *Note Non-semantic sources::
+offered with such "non-semantic"-sources.  See *note Non-semantic sources::
 for further details about working with source-files not supported by the
 semantic-parser.
 
@@ -3502,10 +3502,10 @@ change the general style of the tree-buffers with the option
 `ecb-tree-buffer-style' and the location of the collapse- and expand-symbols
 and the indentation of sub-nodes in a tree. See `ecb-tree-indent' and
 `ecb-tree-expand-symbol-before'. More details about the different
-tree-buffer-styles are described in *Note Tree-buffer styles::.
+tree-buffer-styles are described in *note Tree-buffer styles::.
 
 Here are all currently available layouts (for creating own new layouts see
-*Note Creating a new ECB-layout::); just customize the option
+*note Creating a new ECB-layout::); just customize the option
 `ecb-layout-name' to the related name:
 
 Layout "left1"
@@ -4251,7 +4251,7 @@ into your Emacs because it's automatically loaded by ECB!
 in the help-screen are available. ALL other commands are temporally disabled
 (even the mouse-commands).
 
-For programming new layouts with emacs-lisp see *Note The layout-engine::.
+For programming new layouts with emacs-lisp see *note The layout-engine::.
 
 With the command `ecb-delete-new-layout' you can delete previously created
 layouts (TAB-completion is offered for all names of user created layouts).
@@ -4401,7 +4401,7 @@ can select more than one source-file from the sources-buffer.
 
 ---------- Footnotes ----------
 
-(1) This command is adviced per default, see *Note The edit-area::.
+(1) This command is adviced per default, see *note The edit-area::.
 
 
 File: ecb.info,  Node: Back/forward navigation,  Next: ECB-window synchronizing,  Prev: Maximizing the ECB windows,  Up: Usage of ECB
@@ -4450,7 +4450,7 @@ Per default ECB synchronizes automatically the contents of the ECB-windows
 buffer of the edit window).
 
 ECB distinguishes between the so called "basic" ECB-windows (for a general
-description see *Note Basic ECB-windows::) and add-on ECB-windows (*note
+description see *note Basic ECB-windows::) and add-on ECB-windows (*note
 Add-on ECB-windows::). This distinction is also important concerning
 synchronization:
 
@@ -4539,7 +4539,7 @@ ECB-window has its own separate triple of these options, named congruent to
 the name of the buffer-name of the add-on ECB-window (e.g. for the analyse
 ECB-window with the buffer-name hold in `ecb-analyse-buffer-name' these three
 options are named `ecb-analyse-buffer-sync', `ecb-analyse-buffer-sync-delay'
-and `ecb-analyse-buffer-sync-hook'.  For some specialities see *Note Add-on
+and `ecb-analyse-buffer-sync-hook'.  For some specialities see *note Add-on
 synchronization::.
 
 *Please note*: With the command `ecb-window-sync' you can do a manual
@@ -4659,7 +4659,7 @@ checking if a certain directory is empty or checking the VC-state of a
 sourcefile in such a remote directory) can be very time-consuming and such a
 single action is not interruptable (an interrupt can only occur between the
 single-actions for two directories or sources) For a further discussion how
-to deal best with remote directories see *Note Remote directories::.!
+to deal best with remote directories see *note Remote directories::.!
 
 ECB offers for all stealthy tasks three steps of activation:
    * `t': Switch on this feature.
@@ -5108,11 +5108,11 @@ Command Index::.
      otherwise off. Return non-`nil' if the minor mode is enabled.
 
  -- Command: nav-goto-previous
-     Go backward in the navigation history-list, see *Note Back/forward
+     Go backward in the navigation history-list, see *note Back/forward
      navigation::.
 
  -- Command: nav-goto-next
-     Go forward in the navigation history-list, see *Note Back/forward
+     Go forward in the navigation history-list, see *note Back/forward
      navigation::.
 
  -- Command: rebuild-methods-buffer
@@ -5343,7 +5343,7 @@ Command Index::.
      tree-buffer directories, sources, methods and history are synchronized.
      Otherwise all registered special ecb-buffers are synchronized too.
 
-     See *Note ECB-window synchronizing::.
+     See *note ECB-window synchronizing::.
 
 Most of these functions are also available via the menu "ECB" and also via
 the ECB key-map with prefix `C-c .' (see `ecb-minor-mode' for a complete list
@@ -5676,7 +5676,7 @@ customize-group "ecb-most-important" or via the command
      for LaTeX- and perl-sources (*note Non-semantic sources::).
 
 But to make ECB working best for you it is also recommended to have a look at
-*Note Customizable options::!
+*note Customizable options::!
 
 
 File: ecb.info,  Node: Customizable options,  Prev: Most important options,  Up: Customizing

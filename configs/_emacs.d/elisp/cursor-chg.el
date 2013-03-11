@@ -169,7 +169,8 @@ use either \\[customize] or command `change-cursor-mode'."
   :type 'symbol :group 'cursor)
 
 ;;;###autoload
-(defcustom curchg-input-method-cursor-color "Orange"
+(defcustom curchg-input-method-cursor-color "Green"
+  ;"Orange"
   "*Default cursor color if using an input method.
 This has no effect if `curchg-change-cursor-on-input-method-flag' is nil."
   :type (if (>= emacs-major-version 21) 'color 'string) :group 'cursor)

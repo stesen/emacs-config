@@ -2,8 +2,8 @@
 
 ;;; Copyright (C) 2007 Daniel Debertin (debertin@gmail.com)
 
-;; Author: stesen <stesen@debian>
-;; Created: 2012-08-05 11:50:25+0800
+;; Author: stesen <stesen@OS-kernel>
+;; Created: 2012-06-28 09:25:59+0800
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

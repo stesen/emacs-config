@@ -3,7 +3,7 @@
 <title>ecb-directories - ECB - the Emacs Code Browser</title>
 <meta http-equiv="Content-Type" content="text/html">
 <meta name="description" content="ECB - the Emacs Code Browser">
-<meta name="generator" content="makeinfo 4.8">
+<meta name="generator" content="makeinfo 4.13">
 <link title="Top" rel="start" href="ecb.html#Top">
 <link rel="up" href="Customizable-options.html#Customizable-options" title="Customizable options">
 <link rel="prev" href="ecb_002dtree_002dbuffer.html#ecb_002dtree_002dbuffer" title="ecb-tree-buffer">
@@ -24,9 +24,9 @@
 </head>
 <body>
 <div class="node">
-<p>
 <a name="ecb-directories"></a>
 <a name="ecb_002ddirectories"></a>
+<p>
 Next:&nbsp;<a rel="next" accesskey="n" href="ecb_002dsources.html#ecb_002dsources">ecb-sources</a>,
 Previous:&nbsp;<a rel="previous" accesskey="p" href="ecb_002dtree_002dbuffer.html#ecb_002dtree_002dbuffer">ecb-tree-buffer</a>,
 Up:&nbsp;<a rel="up" accesskey="u" href="Customizable-options.html#Customizable-options">Customizable options</a>
@@ -117,7 +117,7 @@ down dramatically so a caching increases speed a lot.
 and looks like:
 
      <pre class="example">          (&lt;dir-regexp&gt; . &lt;filenumber threshold&gt;) with
-   </pre>
+</pre>
           <dl>
 <dt><code>&lt;dir-regexp&gt;:</code><dd>Regular expression a directory must match to be cached. 
 <br><dt><code>&lt;filenumber threshold&gt;:</code><dd>Number of directory contents must exceed this number. 
@@ -270,7 +270,7 @@ for further details.
           "Prints the name of the directory of the node under point."
           (let ((node-data=dir (tree-node-get-data node)))
              (message ``Dir under node: %s'' node-data=dir)))
-   </pre>
+</pre>
         <p>Per default the static user-extensions are added at the beginning of
 the built-in menu-entries of <code>ecb-directories-menu</code> but the whole
 menu can be re-arranged with <code>ecb-directories-menu-sorter</code>.
